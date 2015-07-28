@@ -10,3 +10,10 @@ before_script:
 install: composer install
 
 script: phpunit --bootstrap init_autoloader.php --coverage-text tests/
+
+#deploy:
+#  provider: opsworks
+#  access-key-id: ACCESS-KEY-ID
+#  secret-access-key: SECRET-ACCESS-KEY
+# app-id: APP-ID
+  
