@@ -9,8 +9,8 @@ php:
 #  - composer self-update 
 #  - composer install
 
-#script:
-#   - phpunit --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage
+script:
+   - /var/www/app/vendor/phpunit/phpunit/phpunit --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage /var/www/app/tests/MoneyTest
 
 #notifications:
 #   email: false
