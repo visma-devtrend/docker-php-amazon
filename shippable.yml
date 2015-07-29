@@ -5,9 +5,9 @@ php:
   
 before_script:
   - pwd
+  - ls -alh
   - mkdir -p shippable/codecoverage
   - mkdir -p shippable/testresults
-  - cd /var/www/app
   - ./composer.phar self-update 
   - ./composer.phar install
 
